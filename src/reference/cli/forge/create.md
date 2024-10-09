@@ -209,6 +209,12 @@ Transaction options:
           
           Examples: 1ether, 10gwei, 0.01ether
 
+          The contract needs a payable constructor for this to work.
+          Simple example:
+          ```solidity
+          constructor() payable {}
+          ```
+
       --nonce <NONCE>
           Nonce for the transaction
 
